@@ -1,0 +1,16 @@
+# 仮想環境
+venv/
+
+# mypyのキャッシュ
+.mypy_cache/
+
+# Python系
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
