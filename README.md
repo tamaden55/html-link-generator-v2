@@ -1,26 +1,41 @@
 # 🔗 HTML Link Generator v2
 
-このアプリは、画像URLや任意のテキストをもとに、WordPressやHTMLで使えるリンクタグを簡単に生成できるツールです。
+画像URLや任意のテキストから、WordPressやHTMLで使えるリンクタグを簡単に生成できるツールです。
 
-## 🌐 オンライン版
+## 🌐 ライブデモ
 
-**GitHub Pages**: [https://yourusername.github.io/html-link-generator-v2/](https://yourusername.github.io/html-link-generator-v2/)
+### メインサイト（推奨）
+**GitHub Pages**: [https://tamaden55.github.io/html-link-generator-v2/](https://tamaden55.github.io/html-link-generator-v2/)
+- ⚡ 高速読み込み（静的サイト）
+- 🌐 常時オンライン
+- 📱 完全レスポンシブ対応
 
+### バックアップサイト
 **Streamlit Cloud**: [https://html-link-generator-v2-kcvfgrkbanmavsgykshgga.streamlit.app/](https://html-link-generator-v2-kcvfgrkbanmavsgykshgga.streamlit.app/)
+- 🐍 Python/Streamlit版
+- ⏰ 初回アクセス時に少し時間がかかる場合があります
 
 ---
 
-## 🚀 機能一覧
+## ✨ 主な機能
 
-- 画像URLを入力すると、WordPress用の `<figure>` タグ付き画像リンクを生成
-- 任意テキストとURLから `<a>` タグを生成（新しいタブで開く設定も可）
-- コピー用ボタンでHTMLタグを一発コピー
-- Enterキーでもコピー可能＆ポップアップで通知
-- 完全にレスポンシブ対応（モバイル・タブレット・デスクトップ）
+### 🖼️ 画像リンク生成
+- 画像URLを入力するだけで、WordPress用の `<figure>` タグ付き画像リンクを自動生成
+- 適切な画像サイズ指定（`?w=769`）とクラス名を含んだ完全なHTMLコード
+
+### 📝 テキストリンク生成
+- 任意のテキストとURLから `<a>` タグを生成
+- 新しいタブで開く設定（`target="_blank"`）のオン/オフ切り替え可能
+
+### 🚀 使いやすさ
+- 📋 ワンクリックでクリップボードにコピー
+- ⌨️ Enterキーでも瞬時にコピー可能
+- 🔔 コピー完了の視覚的な通知
+- 📱 全デバイス対応（スマホ・タブレット・PC）
 
 ---
 
-## 💻 GitHub Pagesでの使用方法
+## 🛠️ 自分用にカスタマイズする方法
 
 ### 1. このリポジトリをフォーク
 1. 右上の「Fork」ボタンをクリック
@@ -29,11 +44,15 @@
 ### 2. GitHub Pagesを有効化
 1. フォークしたリポジトリの「Settings」タブをクリック
 2. 左サイドバーの「Pages」をクリック
-3. Source を「GitHub Actions」に設定
-4. 自動デプロイが開始されます
+3. Source を「Deploy from a branch」に設定
+4. Branch を「main」、フォルダを「/ (root)」に設定
+5. 「Save」をクリック
 
-### 3. アクセス
-`https://yourusername.github.io/html-link-generator-v2/` でアクセス可能
+### 3. あなた専用のサイトにアクセス
+`https://あなたのユーザー名.github.io/html-link-generator-v2/` でアクセス可能
+
+### 4. カスタマイズ
+`index.html` を編集して、デザインや機能を自由にカスタマイズできます。
 
 ---
 
@@ -71,13 +90,22 @@ html-link-generator-v2/
 
 ---
 
-## 🌟 特徴
+## 🌟 技術的特徴
 
-- **静的ホスティング対応**: GitHub Pages、Netlify、Vercel、AWS S3など
-- **動的ホスティング対応**: Streamlit Cloud、Railway、Render、Heroku
-- **レスポンシブデザイン**: すべてのデバイスで快適に使用可能
-- **高速**: 静的版は瞬時に読み込み、サーバー不要
-- **常時オンライン**: 静的版はスリープしない
+### 🚀 パフォーマンス
+- **超高速**: 静的HTMLファイルで瞬時に読み込み
+- **サーバーレス**: CDN配信でグローバルに高速アクセス
+- **常時稼働**: スリープしない、ダウンタイムなし
+
+### 🏗️ 柔軟なデプロイ
+- **静的ホスティング**: GitHub Pages、Netlify、Vercel、AWS S3など
+- **動的ホスティング**: Streamlit Cloud、Railway、Render、Heroku
+- **ハイブリッド構成**: 静的版と動的版の両方を提供
+
+### 📱 デバイス対応
+- **完全レスポンシブ**: スマートフォンからデスクトップまで
+- **タッチ操作対応**: モバイルデバイスでの快適な操作
+- **高解像度対応**: Retinaディスプレイにも対応
 
 ---
 
