@@ -1,9 +1,42 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import os
 
-st.set_page_config(page_title="リンク生成ツール", layout="centered")
+st.set_page_config(
+    page_title="リンク生成ツール", 
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
+
+# Add CSS for better mobile responsiveness
+st.markdown("""
+<style>
+    .main > div {
+        padding-top: 2rem;
+    }
+    .stTextInput > div > div > input {
+        font-size: 16px;
+    }
+    .stTextArea > div > div > textarea {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        .main > div {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Initialize session state
+if 'initialized' not in st.session_state:
+    st.session_state.initialized = True
 
 st.title("🔗 リンク生成ツール")
+
+# Add status indicator
+st.markdown("🟢 **オンライン** - いつでもご利用いただけます")
 
 tab1, tab2 = st.tabs(["🖼️ 画像リンク生成", "📝 テキストリンク生成"])
 
